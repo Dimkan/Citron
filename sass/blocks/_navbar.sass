@@ -1,0 +1,81 @@
+.navbar
+     align-content: center
+    
+    
+    &-wrap
+        min-height: 100px
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 1
+        padding-right: 15px
+        padding-left: 15px
+        
+    &__logo
+       
+    &__nav-link
+        +bold
+        font-size: 14
+        margin-right: 15px
+        display: inline-flex
+        list-style: none
+        text-decoration: none
+        color: #ffffff
+    &__nav-link:hover
+        color: #B4B4B4
+
+    &__button
+        +bold
+        text-transform: uppercase
+        cursor: pointer
+        font-size: 11px
+        padding: 16px 28px
+        color: #ffffff
+        border-radius: 5px
+        border: none
+        width: 176px
+        height: 54px
+        background: linear-gradient(266.37deg, #F1545F 0.35%, #CE1120 99.65%)
+    &__button:hover
+        background: linear-gradient(266.37deg, #CE1120 0.35%, #F1545F 99.65%)
+
+    &__landline
+        margin-left: 26px
+    
+    
+    &__mobile, &__email
+        text-align: left
+    
+    &__mobile
+        +bold
+        font-size: 16px
+        text-decoration: none
+        color: #fff
+    &__email
+        margin-top: 10px
+        display: block
+        +bold
+        font-size: 13px
+        text-decoration: none
+        color: #fff
+.menu
+    &-button
+        margin-left: 30px
+        display: none
+        position: relative
+    
+@media ( max-width: 1000px  )
+    .nav
+        display: none
+    
+@media ( max-width: 1200px  )
+        .navbar__nav-link
+            font-size: 10px 
+        .navbar_button_case
+            display: none
+        .menu 
+            &-button
+                display: block
+                cursor: pointer
+                background: none
+                border: none
