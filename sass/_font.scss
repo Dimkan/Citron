@@ -17,6 +17,15 @@
         font-weight: normal;
         font-style: normal;
         }
+    @font-face {
+        font-family: 'Montserrat Bold';
+        src: url('../fonts/Montserrat-Bold.eot');
+        src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Montserrat-Bold.woff') format('woff'),
+            url('../fonts/Montserrat-Bold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
 
 @mixin bold {
@@ -25,4 +34,9 @@
 
 @mixin normal {
     font-family: 'Montserrat Regular', sans-serif;
+}
+
+@mixin strong {
+    font-family: 'Montserrat Bold', sans-serif;
+    
 }
