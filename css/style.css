@@ -17,11 +17,22 @@
 }
 
 .container {
-  min-width: 360px;
   padding-right: 15px;
   padding-left: 15px;
   max-width: 1240px;
   margin: auto;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .container {
+    max-width: 800px;
+  }
 }
 
 @font-face {
@@ -57,9 +68,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -141,6 +149,9 @@ body {
 @media (max-width: 1040px) {
   .navbar__nav-link {
     display: none;
+  }
+  .menu-button {
+    display: block;
   }
 }
 
