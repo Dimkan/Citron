@@ -1,14 +1,10 @@
-.navbar
-       
-    &-wrap
-        min-height: 100px
+.navbar 
+    .navbar__wrap
+        padding-top: 20px
         display: flex
         justify-content: center
         align-items: center
-        z-index: 1
-        
-        
-    &__logo
+        z-index: 1 
        
     &__nav-link
         +bold
@@ -63,6 +59,18 @@
         background: none
         border: none
 
+
+@media  (max-width: 1199px)
+    .navbar
+        &__button
+            display: none
+
+@media  (max-width: 1040px)
+    .navbar
+        &__nav-link
+            display: none
+
+    
  
     
     
