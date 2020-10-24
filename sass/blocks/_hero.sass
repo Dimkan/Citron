@@ -1,23 +1,31 @@
 .hero
-	z-index: 0
+	margin: 0 auto
+	height: 920px
+  z-index: -1
+	background-size: cover
+	background:  url('/img/backhouse.png' )  no-repeat right bottom, linear-gradient(180deg, rgba(96, 157, 243, 0.5) 0%, rgba(225, 243, 243, 0.5) 64.93%), #E1F3F3  
 	&__tittle
-		padding-top: 100px
+		padding-top: 180px
+		margin: 0 
+		width: 803px
 		line-height: 75px
-		margin: 0 auto
 		+strong
-		font-size: 75px
+		font-size: 70px
 		color: #333B41
 	&__article
-		padding-top: 26px
+		padding-top: 20px
+		width: 630px
+		+exlight
 		font-size: 18px
 		color: #2C3133
 		line-height: 26px
 	&__subtittle
-		padding-top: 60px
+		padding-top: 20px
 		+bold
 		font-size: 30px
 		color: #2C3133
 	&__form
+		padding-top: 16px
 		
 	&__input-name
 		padding: 21px 25px
@@ -56,17 +64,140 @@
 	&__form-article
 		font-size: 12px
 		color: #97BEBE
+	&__advantages
+		display: grid
+    grid-gap: 5px
+    grid-template-columns: repeat(auto-fit, 400px)
+    grid-template-rows: repeat(2, 400px)
+		
+	&__wrapper
+
+		display: grid
+    grid-template-columns: 400px 400px 400px
+    grid-template-rows: 400px 400px
+	
 	&__advantages div
-		margin-top: 20px
-		display: inline-block
-		width: 280px
+		width: 100%
+		
 	
 	&__advantages h3
 		font-size: 18px
 		+bold	
+	
 	&__advantages p
+		width: 200px
 		line-height: 20px
 		color: #2C3133 0.5
 		font-size: 14px
 	
+@media (max-width: 1800px)
+	.hero
+		&__advantages div
+			width: 260px
+
+@media (max-width: 1560px)
+	.hero
+		&__tittle
+			font-size: 60px
+		&__advantages div
+			width: 220px
+		&__advantages p
+			width: 180px
+
+@media (max-width: 1200px)
+	.hero
+		&__advantages div
+			width: 200px
+		&__advantages p
+			width: 140px
+		height: 920px
+
+@media (max-width: 1199px)
+	.hero
+		background: linear-gradient(180deg, rgba(96, 157, 243, 0.5) 0%, rgba(225, 243, 243, 0.5) 64.93%), #E1F3F3
+		
+		&__advantages div
+			width: 200px
+		&__advantages p
+			width: 140px
+		height: 920px
+
+@media (max-width: 900px)
+	.hero
+		&__tittle
+			line-height: 64px
+			font-size: 60px
+		&__advantages div
+			width: 200px
+		&__advantages p
+			width: 140px
+		height: 920px
+		
+@media (max-width: 700px) 
+	.hero
+		&__subtittle
+			font-size: 20px
+		&__form
+			padding-top: 0px
+		&__tittle
+			width: 540px
+			font-size: 48px
+			line-height: 46px
+		&__article
+			width: 540px
+			line-height: 20px
+			font-size: 16px
+		&__input-name
+			font-size: 14px
+			width: 140px
+		&__input-mobile
+			font-size: 12px
+			width: 140px
+		&__button
+			width: 200px
+		&__advantages
+			display: block
+			align-content: center
+			justify-content: center
+		&__advantages div
+
+@media (min-width: 360px) and  (max-width: 500px)
+	.hero
+		&__subtittle
+			line-height: 24px
+			font-size: 24px
+		&__form
+			width: 280px
+			padding-top: 0px
+		&__tittle
+			padding-top: 120px
+			width: 280px
+			font-size: 32px
+			line-height: 36px
+		&__article
+			width: 280px
+			line-height: 24px
+			font-size: 18px
+		&__input-name
+			font-size: 13px
+			width: 130px
+		&__input-mobile
+			margin-left: 10px
+			font-size: 13px
+			width: 130px
+		&__button
+			margin-left: 0px
+			margin-top: 10px
+			width: 280px
+		&__advantages
+			display: grid
+    	grid-gap: 5px
+    	grid-template-columns: repeat(auto-fit, 200px)
+    	grid-template-rows: repeat(2, 200px)
+		&__advantages div
+			
+		
+			
+		
+			
 	

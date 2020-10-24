@@ -1,9 +1,10 @@
 .navbar 
+    z-index: 1 
+    position: fixed
     .navbar__wrap
         padding-top: 20px
         display: flex
         align-items: center
-        z-index: 1 
        
     &__nav-link
         +bold
@@ -52,20 +53,19 @@
         color: #fff
 .menu
     &-button
-        margin-left: 30px
+        margin-left: 10%
         display: none
         position: relative
         background: none
         border: none
 
 
-@media  (max-width: 1199px)
+@media (max-width: 1220px)
     .navbar
         &__button
             display: none
 
-
-@media  (max-width: 1040px)
+@media (max-width: 1040px)
     .navbar
         &__nav-link
             display: none
@@ -73,6 +73,19 @@
     .menu
         &-button
             display: block
+
+
+@media (max-width: 580px)
+    .navbar
+        margin: 0
+        padding-top: 10px
+
+        &__logo
+            display: none
+    nav
+        display: none
+
+
 
 
  

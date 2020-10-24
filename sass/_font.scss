@@ -27,6 +27,25 @@
         font-style: normal;
     }
 
+    @font-face {
+        font-family: 'Montserrat Light';
+        src: url('../fonts/Montserrat-Light.eot');
+        src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Montserrat-Light.woff') format('woff'),
+            url('../fonts/Montserrat-Light.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Montserrat Extra Light';
+        src: url('../fonts/Montserrat-ExtraLight.eot');
+        src: url('../fonts/Montserrat-ExtraLight.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Montserrat-ExtraLight.woff') format('woff'),
+            url('../fonts/Montserrat-ExtraLight.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
 @mixin bold {
     font-family: 'Montserrat Semibold', sans-serif;
@@ -38,5 +57,15 @@
 
 @mixin strong {
     font-family: 'Montserrat Bold', sans-serif;
+    
+}
+
+@mixin light {
+    font-family: 'Montserrat Light' sans-serif;
+    
+}
+
+@mixin exlight {
+    font-family: 'Montserrat Extra Light' sans-serif;
     
 }

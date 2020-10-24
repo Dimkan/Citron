@@ -1,12 +1,10 @@
 *
     box-sizing: border-box
-.hero__background
-    height: 890px
-    z-index: -1
-    background:  url('/img/backhouse.png' )  no-repeat top right, linear-gradient(180deg, rgba(96, 157, 243, 0.5) 0%, rgba(225, 243, 243, 0.5) 64.93%), #E1F3F3  
+    
     
 .navbar
     width: 100%
+    min-height: 70px
     height: 100px
     background-color: #1D3557
     
@@ -14,7 +12,7 @@
     padding-right: 15px
     padding-left: 15px
     max-width: 1240px
-    margin: auto
+    margin: 0 auto
 
 @media ( max-width: 1199px  )
     .container
@@ -24,6 +22,12 @@
     .container
         max-width: 800px
     
+@media ( max-width: 700px  )
+    .container
+        max-width: 600px
     
-       
+@media ( max-width: 400px  )
+    .container
+        max-width: 320px
+    
                 
